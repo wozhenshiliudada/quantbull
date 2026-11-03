@@ -23,7 +23,7 @@ export const getTodayString = () => {
  */
 export const getYesterdayString = () => {
   const yesterday = new Date()
-  yesterday.setDate(yesterday.getDate() - 2)
+  yesterday.setDate(yesterday.getDate() - 1)
   return yesterday.toISOString().split('T')[0]
 }
 
